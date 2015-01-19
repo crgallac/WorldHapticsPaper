@@ -1,0 +1,390 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out if you need a4paper
+
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4 paper
+
+\IEEEoverridecommandlockouts                              % This command is only needed if 
+                                                          % you want to use the \thanks command
+
+\overrideIEEEmargins                                      % Needed to meet printer requirements.
+
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+% The following packages can be found on http:\\www.ctan.org
+\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+\usepackage{times} % assumes new font selection scheme installed
+\usepackage{amsmath} % assumes amsmath package installed
+\usepackage{amssymb}  % assumes amsmath package installed
+%\usepackage[utf8]{inputenc}
+\usepackage{bm}
+
+
+\title{\LARGE \bf
+Effects of Device Coupling on Haptic Performance
+}
+
+
+\author{Colin Gallacher$^{1}$ and Jozsef K\"{o}vecses$^{2}$% <-this % stops a space
+\thanks{*This work was not supported by any organization}% <-this % stops a space
+\thanks{$^{1}$Albert Author is with Faculty of Electrical Engineering, Mathematics and Computer Science,
+        University of Twente, 7500 AE Enschede, The Netherlands
+        {\tt\small albert.author@papercept.net}}%
+\thanks{$^{2}$Bernard D. Researcheris with the Department of Electrical Engineering, Wright State University,
+        Dayton, OH 45435, USA
+        {\tt\small b.d.researcher@ieee.org}}%
+}
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+
+This electronic document is a ÒliveÓ template. The various components of your paper [title, text, heads, etc.] are already defined on the style sheet, as illustrated by the portions given in this document.
+
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTRODUCTION}
+
+At the moment, performance evaluation of force feedback haptic devices presents a huge hurdle towards the general acceptance of haptic technologies by the public. The wide range of device mechanism and uses poses a seriously challenging task of evaluating how a device will perform.
+
+ Currently we evaluate the performance of devices based on respective quantifiable performance metrics for haptic systems. These haptic systems are analysed based on the device properties in the unpowered, powered, and interactive state [[Samur12]]. Still, we lack valuable quantitiative metrics that consumers could use to evaluate the quality of a device akin to the ??? for sound systems or ??? for televisions. Progress has been made to characterize the performance of specific devices based on their ability to perform in specified tasks that are fairly universal for haptic applications based on psychophysical evaluation test-beds. These widely accepted tasks can be partitioned into navigation, manipulation, and selection tasks. 
+
+Theoretically, a device's ability to perform well in these tasks should correspond to the overall usability of the device and thus, if quantified, could represent a means to discern a 'good' device from a 'bad' device. The usage of tried psychophysical evaluation techniques such as the fitts' tapping test[insert reference], peg in hole tests, etc., allow for the quantification of a device performance based on the users ability to perform a task of varying difficulty in a specified time. 
+
+These techniques have preliminarily been shown to be an effective means of evaluating two very different devices to perform a desired tasks. However, these evaluations are based on an ad hoc usage of the device workspace to perform the required tasks. In this study we seek to perform preliminary investigations into the dependency of device performance while performing the same task at different locations in the workspace. 
+
+We seek to evaluate the forces that a device may impart upon a user to decrease their ability to accomplish a simple yet universally navigational task of moving from one area of a workspace to another along a straight line. These forces will here on out be referred to as parasitic forces. The understanding of the nature of these parasitic forces will be generalized but will be further elaborated upon for the 2D case of a planar-five-bar mechanism. Finally, simulation will be compared to experimental results for the case of the five-bar-mechanism to determine if, and then to quantify by how much, the device performance for a standard navigational task is influenced by the trajectory. 
+
+The motivation for this study is to formalize the notion of parasitic forces resulting from the manipulator dynamics that can decrease performance as well as providing a groundwork for future studies to explore the reduction of parasitic forces using redundant mechanisms. While this may actually muddy the water in terms of providing a clear-cut answer to the problem of quantifying a haptic device, it may allow for users of pre-built devices to better utilise their existing workspace to increase device performance for specific tasks. 
+
+
+\section{THEORETICAL BACKGROUND}
+To better familiarize the reader with the nature of the study, here we will elaborate on the background theory required for the study. 
+
+\subsection{Fitts' Law and the tapping test}
+
+Drawing from Claude Shannon's seminal information theory work, \textit{ Mathematical Theory of Communication}[[Shannon48]], Paul Fitts hypothesised that the time it took for a human to accomplish a task was linearly proportional to the difficulty of the task [[Fitts54]]. The relationship Fitts devised is analagous to Shannon's Theorem [[Shannon48]] and is referred to as Fitts' Law: 
+
+$$
+MT=\frac{ID}{IP} \eqno{(1)}
+$$
+
+
+Where, $MT$ is the measured time, $ID$ , is termed the index of difficulty and, $IP$, the index of performance. The index of difficulty is defined as,
+$$
+ID= \log_2\left(\frac{2A}{W}\right) \eqno{(2)}
+$$  
+
+$ID$, is a way of non-dimensionalizing the difficulty of a movement task and corresponds to the ratio of the distance of an object, $A$, to the characteristic width of the object, $W$. Fitts required users tap a stylus between two targets of varying distance and size while measuring the time taken to perform the task. A linear regression was then performed on the data providing a line of best fit.
+
+$$
+MT=a+bID \eqno{(3)}
+$$
+
+
+The intercept, $a$, and slope, $b$, are empirically determined constants. The slope of this line, $b$, corresponds to the reciprocal of the Index of Performance, $IP$, and is assumed constant for the specific tool or device the user is operating with. The use of the base-2 logarithm in $(2)$ allows for the ratio of distance to object width (corresponding to the associated difficulty of a task) to be expressed in units of $bits$. Rearranging equation $(1)$ to solve for $IP$ we see the Index of Performance, $IP$, can be expressed in units of $\left[\frac{bits}{sec}\right]$. 
+
+Ideally the intercept, $a$, is zero and deviations can be seen to indicate inaccuracies in the model though can also be attributed to by other additive effects that increase the measured time of a task but are not directly related to the task itself (i.e. button pressing to start and stop the measured time). 
+
+The Fitts' Law model of human response time as a function of task difficulty in 1D has held up well against scientific scrutiny and the results have been replicated and expanded upon for the 2D Steering Law [[insert references]] and even somewhat so for the 3D cases[[insert references]]. The validity of Fitts' Law as a tool for measuring the performance of haptic devices and virtual displays has also been demonstrated. For a more detailed introduction to the intricacies of Fitts' Law, including an attempt at a derivation of the equation from physical principals, the authors direct the reader to references [[insert citations]]. 
+
+The form of Fitts' Law we will be using is referred to as Shannon's variation as it is suggested by a direct analogy with Shannon's information theorem and is expressed as:
+
+$$ MT= a+b\log_2\left(\frac{A+W_e}{W_e}\right) \eqno{(4)} $$
+
+Where, $W_e$, is defined as the \textit{Effective Target Width} [[Welford68]]. 
+
+
+
+\subsection{Dynamic Formulations and Representations}
+
+In order to gain insight into the role parasitic forces may have on a haptic user, we must first develop a dynamic representation of the device. This section aims to develop a generalized minimum representation for a haptic device that partitions the forces the device imparts on the user during navigation into those that exist within the \textit{operational space} and those in an orthogonal space defined as the \textit{admissible-motion space}. This representation is described in detail by Kovecses [[Kovecses08]]. 
+
+The variational form of the system dynamics is expressed with the scalar equation: 
+
+$$
+\delta \hat{\bm{q}_a}^T \left( \bm{M}\dot{\bm{q}_a}+\bm{c}-\tau\right)=0
+$$
+
+Here the inertia tensor, $\bm{M}$, centrifugal and Coriolis forces, $\bm{c}$, and the generalized torques, $\tau$, are represented in the joint space. The vector form of the joint space dynamics is: 
+$$
+\bm{M}\dot{\bm{q_a}}+\bm{c}=\tau
+$$
+
+The joint space velocities are mapped to the \textit{operational} and \textit{admissible-motion} spaces via the transformation, $$\dot{\bm{u}}=\bm{R}\bm{q}_a $$ where $
+\bm{\dot{u}}= \begin{bmatrix}
+\bm{\dot{u}}_{op} 
+\bm{\dot{u}}_{adm} \\
+\end{bmatrix}
+$ and $
+\bm{R}= \begin{bmatrix}
+\bm{J} \\
+\bm{B} \\
+\end{bmatrix}
+$. $\bm{J}$ is the \textit{Jacobian} mapping the joint variables to the operational space coordinates. The operation space coordinates are associated with a space of constrained motion for the device end-effector. We impose that $\bm{R}$ must be invertible through the selection of the matrix $\bm{B}$ which maps the joint velocities to the admissible-motion space. This allows us to express the joint velocities as: 
+$$
+\bm{q}_a = \bm{R}^{-1} \dot{\bm{u}}
+$$
+The variations can then be expressed as: 
+$$
+\delta \bm{q}_a = \delta \bm{u}^T \bm{R}^{-T}
+$$
+
+The substitution of the above equation into [[insert number equation]] allows us to write the variational form of the system dynamics in terms of the operational and admissible-motion spaces. 
+
+$$
+\delta \bm{u}^T \bm{R}^{-T} (\bm{M}\dot{\bm{q}}_a + \bm{c} - \bm{\tau})=0
+$$
+
+The vector form of the operational and admissible-motion space dynamics is then written as: 
+
+$$
+\bm{R}^{-T}\bm{M}\dot{\bm{q}}_a + \bm{R}^{-T}\bm{c} = \bm{R}^{-T}\bm{\tau}
+$$
+
+Differentiation of equation [[insert equation number]] leads to the acceleration level relationship: 
+
+$$
+\dot{\bm{q}}_a = \bm{R}^{-1} \ddot{\bm{u}} + \dot{\bm{R}^{-1}} \dot{\bm{u}}
+$$
+
+Substitution of the above equation into equation [[insert equation number]] leads to the device dynamics represented in the operational and admissible-motion space with the kinematic parametrizations also represented in the operations/admissible-motion space realization. 
+
+$$
+\bm{R}^{-T}\bm{M}\left(\bm{R}^{-1} \ddot{\bm{u}} + \dot{\bm{R}^{-1}} \dot{\bm{u}}\right) + \bm{R}^{-T}\bm{c} = \bm{R}^{-T}\bm{\tau}
+$$
+
+Expanding the above equation permits the device dynamics to be expressed as: 
+
+$$
+\bm{R}^{-T}\bm{M}\bm{R}^{-1} \ddot{\bm{u}}+\bm{R}^{-T}\bm{M}\dot{\bm{R}^{-1}} \dot{\bm{u}}+\bm{R}^{-T}\bm{c} = \bm{R}^{-T}\bm{\tau}
+$$
+
+Grouping the acceleration and velocity terms together we arrive at the equation:
+
+$$
+\bm{R}^{-T}\bm{M}\bm{R}^{-1} \ddot{\bm{u}}+\bm{R}^{-T}\bm{\bar{c}} = \bm{R}^{-T}\bm{\tau}
+$$
+
+The first term corresponds the the inertial forces felt in the operational and admissible motion spaces as a result of the device acceleration.
+
+$$
+\bm{f}_{1}=\bm{R}^{-T}\bm{M}\bm{R}^{-1}\ddot{\bm{u}}
+$$
+
+ The second term corresponds to the inertial forces associated with the device velocities often called the centrifugal and Coriolis forces. 
+ 
+  $$
+\bm{f}_{2}=\bm{R}^{-T}\bm{\bar{c}}
+$$
+
+ The term on the right hand side of equation [[insert equation number]] corresponds to the applied forces at the haptic end-effector with respect to the operational and admissible-motion spaces. 
+
+If we define $\bm{W}=\bm{R}^{-T}\bm{M}\bm{R}^{-1}$, $\bm{z}= \bm{R}^{-T}\bm{\bar{c}}$, and $\bm{s}= \bm{R}^{-T}\bm{\tau}$ we can rewrite the dynamic equations as: 
+
+$$ \bm{W}\ddot{\bm{u}}+\bm{z}=\bm{s} $$
+
+This can be represented in block matrix form as: 
+
+$$ \begin{bmatrix}
+\bm{W}_{op} & \bm{W}_{oa} \\ 
+\bm{W}_{ao} & \bm{W}_a \\ 
+\end{bmatrix} 
+\begin{bmatrix}
+\bm{\ddot{u}}_{op} \\
+\bm{\ddot{u}}_{a} \\
+\end{bmatrix} 
++ 
+ \begin{bmatrix}
+\bm{z}_{op} \\
+\bm{z}_{a} \\
+\end{bmatrix}
+= \begin{bmatrix}
+\bm{s}_{op} \\
+\bm{s}_{a} \\
+\end{bmatrix}
+$$
+
+Finally, the force that we feel in the admissible-motion space is the parasitic force that a user trying to navigate strictly in the operational space would feel for a haptic device. The dynamic equation associated with the parasitic forces is then written as:
+
+$$ 
+\bm{W}_{ao}\ddot{u}_{op}+\bm{W}_{a}\ddot{u}_{a}+\bm{z}_a=\bm{s}_a
+$$
+
+\section{METHODS AND ASSUMPTIONS}
+
+Before you begin to format your paper, first write and save the content as a separate text file. Keep your text and graphic files separate until after the text has been formatted and styled. Do not use hard tabs, and limit use of hard returns to only one return at the end of a paragraph. Do not add any kind of pagination anywhere in the paper. Do not number text heads-the template will do that for you.
+
+Finally, complete content and organizational editing before formatting. Please take note of the following items when proofreading spelling and grammar:
+
+\subsection{Simulation} Define abbreviations and acronyms the first time they are used in the text, even after they have been defined in the abstract. Abbreviations such as IEEE, SI, MKS, CGS, sc, dc, and rms do not have to be defined. Do not use abbreviations in the title or heads unless they are unavoidable.
+
+\subsection{Experimetns}
+
+\begin{itemize}
+
+\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as Ò3.5-inch disk driveÓ.
+\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
+\item Do not mix complete spellings and abbreviations of units: ÒWb/m2Ó or Òwebers per square meterÓ, not Òwebers/m2Ó.  Spell out units when they appear in text: Ò. . . a few henriesÓ, not Ò. . . a few HÓ.
+\item Use a zero before decimal points: Ò0.25Ó, not Ò.25Ó. Use Òcm3Ó, not ÒccÓ. (bullet list)
+
+\end{itemize}
+
+
+\subsection{Equations}
+
+The equations are an exception to the prescribed specifications of this template. You will need to determine whether or not your equation should be typed using either the Times New Roman or the Symbol font (please no other font). To create multileveled equations, it may be necessary to treat the equation as a graphic and insert it into the text after your paper is styled. Number equations consecutively. Equation numbers, within parentheses, are to position flush right, as in (1), using a right tab stop. To make your equations more compact, you may use the solidus ( / ), the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols. Use a long dash rather than a hyphen for a minus sign. Punctuate equations with commas or periods when they are part of a sentence, as in
+
+$$
+\alpha + \beta = \chi \eqno{(1)}
+$$
+
+Note that the equation is centered using a center tab stop. Be sure that the symbols in your equation have been defined before or immediately following the equation. Use Ò(1)Ó, not ÒEq. (1)Ó or Òequation (1)Ó, except at the beginning of a sentence: ÒEquation (1) is . . .Ó
+
+\subsection{Some Common Mistakes}
+\begin{itemize}
+
+
+\item The word ÒdataÓ is plural, not singular.
+\item The subscript for the permeability of vacuum ?0, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ÒoÓ.
+\item In American English, commas, semi-/colons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
+\item A graph within a graph is an ÒinsetÓ, not an ÒinsertÓ. The word alternatively is preferred to the word ÒalternatelyÓ (unless you really mean something that alternates).
+\item Do not use the word ÒessentiallyÓ to mean ÒapproximatelyÓ or ÒeffectivelyÓ.
+\item In your paper title, if the words Òthat usesÓ can accurately replace the word ÒusingÓ, capitalize the ÒuÓ; if not, keep using lower-cased.
+\item Be aware of the different meanings of the homophones ÒaffectÓ and ÒeffectÓ, ÒcomplementÓ and ÒcomplimentÓ, ÒdiscreetÓ and ÒdiscreteÓ, ÒprincipalÓ and ÒprincipleÓ.
+\item Do not confuse ÒimplyÓ and ÒinferÓ.
+\item The prefix ÒnonÓ is not a word; it should be joined to the word it modifies, usually without a hyphen.
+\item There is no period after the ÒetÓ in the Latin abbreviation Òet al.Ó.
+\item The abbreviation Òi.e.Ó means Òthat isÓ, and the abbreviation Òe.g.Ó means Òfor exampleÓ.
+
+\end{itemize}
+
+
+\section{RESULTS}
+
+Use this sample document as your LaTeX source file to create your document. Save this file as {\bf root.tex}. You have to make sure to use the cls file that came with this distribution. If you use a different style file, you cannot expect to get required margins. Note also that when you are creating your out PDF file, the source file is only part of the equation. {\it Your \TeX\ $\rightarrow$ PDF filter determines the output file size. Even if you make all the specifications to output a letter file in the source - if your filter is set to produce A4, you will only get A4 output. }
+
+It is impossible to account for all possible situation, one would encounter using \TeX. If you are using multiple \TeX\ files you must make sure that the ``MAIN`` source file is called root.tex - this is particularly important if your conference is using PaperPlaza's built in \TeX\ to PDF conversion tool.
+
+\subsection{Headings, etc}
+
+Text heads organize the topics on a relational, hierarchical basis. For example, the paper title is the primary text head because all subsequent material relates and elaborates on this one topic. If there are two or more sub-topics, the next level head (uppercase Roman numerals) should be used and, conversely, if there are not at least two sub-topics, then no subheads should be introduced. Styles named ÒHeading 1Ó, ÒHeading 2Ó, ÒHeading 3Ó, and ÒHeading 4Ó are prescribed.
+
+\subsection{Figures and Tables}
+
+Positioning Figures and Tables: Place figures and tables at the top and bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use the abbreviation ÒFig. 1Ó, even at the beginning of a sentence.
+
+\begin{table}[h]
+\caption{An Example of a Table}
+\label{table_example}
+\begin{center}
+\begin{tabular}{|c||c|}
+\hline
+One & Two\\
+\hline
+Three & Four\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+   \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{We suggest that you use a text box to insert a graphic (which is ideally a 300 dpi TIFF or EPS file, with all fonts embedded) because, in an document, this method is somewhat more stable than directly inserting a picture.
+}}
+      %\includegraphics[scale=1.0]{figurefile}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+   
+
+Figure Labels: Use 8 point Times New Roman for Figure labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity ÒMagnetizationÓ, or ÒMagnetization, MÓ, not just ÒMÓ. If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write ÒMagnetization (A/m)Ó or ÒMagnetization {A[m(1)]}Ó, not just ÒA/mÓ. Do not label axes with a ratio of quantities and units. For example, write ÒTemperature (K)Ó, not ÒTemperature/K.Ó
+
+\section{CONCLUSIONS}
+
+A conclusion section is not required. Although a conclusion may review the main points of the paper, do not replicate the abstract as the conclusion. A conclusion might elaborate on the importance of the work or suggest applications and extensions. 
+
+\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{APPENDIX}
+
+Appendixes should appear before the acknowledgment.
+
+\section*{ACKNOWLEDGMENT}
+
+The preferred spelling of the word ÒacknowledgmentÓ in America is without an ÒeÓ after the ÒgÓ. Avoid the stilted expression, ÒOne of us (R. B. G.) thanks . . .Ó  Instead, try ÒR. B. G. thanksÓ. Put sponsor acknowledgments in the unnumbered footnote on the first page.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+References are important to the reader; therefore, each citation must be complete and correct. If at all possible, references should be commonly available publications.
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{c1} G. O. Young, ÒSynthetic structure of industrial plastics (Book style with paper title and editor),Ó 	in Plastics, 2nd ed. vol. 3, J. Peters, Ed.  New York: McGraw-Hill, 1964, pp. 15Ð64.
+\bibitem{c2} W.-K. Chen, Linear Networks and Systems (Book style).	Belmont, CA: Wadsworth, 1993, pp. 123Ð135.
+\bibitem{c3} H. Poor, An Introduction to Signal Detection and Estimation.   New York: Springer-Verlag, 1985, ch. 4.
+\bibitem{c4} B. Smith, ÒAn approach to graphs of linear forms (Unpublished work style),Ó unpublished.
+\bibitem{c5} E. H. Miller, ÒA note on reflector arrays (Periodical styleÑAccepted for publication),Ó IEEE Trans. Antennas Propagat., to be publised.
+\bibitem{c6} J. Wang, ÒFundamentals of erbium-doped fiber amplifiers arrays (Periodical styleÑSubmitted for publication),Ó IEEE J. Quantum Electron., submitted for publication.
+\bibitem{c7} C. J. Kaufman, Rocky Mountain Research Lab., Boulder, CO, private communication, May 1995.
+\bibitem{c8} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ÒElectron spectroscopy studies on magneto-optical media and plastic substrate interfaces(Translation Journals style),Ó IEEE Transl. J. Magn.Jpn., vol. 2, Aug. 1987, pp. 740Ð741 [Dig. 9th Annu. Conf. Magnetics Japan, 1982, p. 301].
+\bibitem{c9} M. Young, The Techincal Writers Handbook.  Mill Valley, CA: University Science, 1989.
+\bibitem{c10} J. U. Duncombe, ÒInfrared navigationÑPart I: An assessment of feasibility (Periodical style),Ó IEEE Trans. Electron Devices, vol. ED-11, pp. 34Ð39, Jan. 1959.
+\bibitem{c11} S. Chen, B. Mulgrew, and P. M. Grant, ÒA clustering technique for digital communications channel equalization using radial basis function networks,Ó IEEE Trans. Neural Networks, vol. 4, pp. 570Ð578, July 1993.
+\bibitem{c12} R. W. Lucky, ÒAutomatic equalization for digital communication,Ó Bell Syst. Tech. J., vol. 44, no. 4, pp. 547Ð588, Apr. 1965.
+\bibitem{c13} S. P. Bingulac, ÒOn the compatibility of adaptive controllers (Published Conference Proceedings style),Ó in Proc. 4th Annu. Allerton Conf. Circuits and Systems Theory, New York, 1994, pp. 8Ð16.
+\bibitem{c14} G. R. Faulhaber, ÒDesign of service systems with priority reservation,Ó in Conf. Rec. 1995 IEEE Int. Conf. Communications, pp. 3Ð8.
+\bibitem{c15} W. D. Doyle, ÒMagnetization reversal in films with biaxial anisotropy,Ó in 1987 Proc. INTERMAG Conf., pp. 2.2-1Ð2.2-6.
+\bibitem{c16} G. W. Juette and L. E. Zeffanella, ÒRadio noise currents n short sections on bundle conductors (Presented Conference Paper style),Ó presented at the IEEE Summer power Meeting, Dallas, TX, June 22Ð27, 1990, Paper 90 SM 690-0 PWRS.
+\bibitem{c17} J. G. Kreifeldt, ÒAn analysis of surface-detected EMG as an amplitude-modulated noise,Ó presented at the 1989 Int. Conf. Medicine and Biological Engineering, Chicago, IL.
+\bibitem{c18} J. Williams, ÒNarrow-band analyzer (Thesis or Dissertation style),Ó Ph.D. dissertation, Dept. Elect. Eng., Harvard Univ., Cambridge, MA, 1993. 
+\bibitem{c19} N. Kawasaki, ÒParametric study of thermal and chemical nonequilibrium nozzle flow,Ó M.S. thesis, Dept. Electron. Eng., Osaka Univ., Osaka, Japan, 1993.
+\bibitem{c20} J. P. Wilkinson, ÒNonlinear resonant circuit devices (Patent style),Ó U.S. Patent 3 624 12, July 16, 1990. 
+
+
+
+
+
+
+\end{thebibliography}
+
+
+
+
+\end{document}
