@@ -224,7 +224,11 @@ $$
 Finally, the force that we feel in the admissible-motion space is the parasitic force that a user trying to navigate strictly in the operational space would feel for a haptic device. The dynamic equation associated with the parasitic forces is then written as:
 
 $$ 
-\bm{W}_{ao}\ddot{u}_{op}+\bm{W}_{a}\ddot{u}_{a}+\bm{z}_a=\bm{s}_a
+\bm{W}_{ao}\ddot{\bm{u}}_{op}+\bm{W}_{a}\ddot{\bm{u}}_{a}+\bm{z}_a=\bm{s}_a
+$$
+
+$$
+\ddot{\bm{u}}_{a}=\frac{\bm{s}_a-\bm{z}_a-{W}_{ao}\ddot{\bm{u}}_{op}}{W_{a}}
 $$
 
 \section{METHODS AND ASSUMPTIONS}
