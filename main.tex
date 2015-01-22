@@ -75,18 +75,18 @@ The motivation for this study is to formalize the notion of parasitic forces res
 
 
 \section{THEORETICAL BACKGROUND}
-To better familiarize the reader with the nature of the study, here we will elaborate on the background theory required for the study. 
+To better familiarize the reader with the nature of the experiment, here we will elaborate on the background theory required for the study. 
 
 \subsection{Fitts' Law and the tapping test}
 
-Drawing from Claude Shannon's seminal information theory work, \textit{ Mathematical Theory of Communication}[[Shannon48]], Paul Fitts hypothesised that the time it took for a human to accomplish a task was linearly proportional to the difficulty of the task [[Fitts54]]. The relationship Fitts devised is analagous to Shannon's Theorem [[Shannon48]] and is referred to as Fitts' Law: 
+Drawing from Shannon's seminal information theory work, \textit{ Mathematical Theory of Communication}[[Shannon48]], Fitts hypothesised that the time it took for a human to accomplish a task was linearly proportional to the difficulty of the task [[Fitts54]]. The relationship Fitts devised is analagous to Shannon's Theorem [[Shannon48]] and is referred to as Fitts' Law: 
 
 $$
 MT=\frac{ID}{IP} \eqno{(1)}
 $$
 
 
-Where, $MT$ is the measured time, $ID$ , is termed the index of difficulty and, $IP$, the index of performance. The index of difficulty is defined as,
+Where, $MT$ is the measured time, $ID$ , is termed the \textit{Index of Difficulty} and, $IP$, the {Index of Performance}. The index of difficulty is defined as,
 $$
 ID= \log_2\left(\frac{2A}{W}\right) \eqno{(2)}
 $$  
@@ -98,11 +98,11 @@ MT=a+bID \eqno{(3)}
 $$
 
 
-The intercept, $a$, and slope, $b$, are empirically determined constants. The slope of this line, $b$, corresponds to the reciprocal of the Index of Performance, $IP$, and is assumed constant for the specific tool or device the user is operating with. The use of the base-2 logarithm in $(2)$ allows for the ratio of distance to object width (corresponding to the associated difficulty of a task) to be expressed in units of $bits$. Rearranging equation $(1)$ to solve for $IP$ we see the Index of Performance, $IP$, can be expressed in units of $\left[\frac{bits}{sec}\right]$. 
+The intercept, $a$, and slope, $b$, are empirically determined constants. The slope of this line, $b$, corresponds to the reciprocal of the \textit{Index of Performance}, $IP$, and is assumed constant for the specific tool or device the user is operating with. The use of the $\log_2$ in $(2)$ allows for the ratio of distance to object width (corresponding to the associated difficulty of a task) to be expressed in units of $bits$. Rearranging equation $(1)$ to solve for $IP$ we see the \textit{Index of Performance}, $IP$, can be expressed in units of $\left[\frac{bits}{sec}\right]$. 
 
-Ideally the intercept, $a$, is zero and deviations can be seen to indicate inaccuracies in the model though can also be attributed to by other additive effects that increase the measured time of a task but are not directly related to the task itself (i.e. button pressing to start and stop the measured time). 
+Ideally the intercept, $a$, is zero and deviations can be seen to indicate inaccuracies in the model, though may also be attributed to other additive effects that increase the measured time of a task but are not directly related to the task itself (i.e. button pressing to start and stop the measured time). 
 
-The Fitts' Law model of human response time as a function of task difficulty in 1D has held up well against scientific scrutiny and the results have been replicated and expanded upon for the 2D Steering Law [[insert references]] and even somewhat so for the 3D cases[[insert references]]. The validity of Fitts' Law as a tool for measuring the performance of haptic devices and virtual displays has also been demonstrated. For a more detailed introduction to the intricacies of Fitts' Law, including an attempt at a derivation of the equation from physical principals, the authors direct the reader to references [[insert citations]]. 
+The Fitts' Law model of human response time as a function of task difficulty in 1D has held up well against scientific scrutiny and the results have been replicated and expanded upon for the 2D Steering Law [[insert references]] and even somewhat so for the 3D cases[[insert references]]. The validity of Fitts' Law as a tool for measuring the performance of haptic devices and virtual displays has also been demonstrated [[insert references]]. For a more detailed introduction to the intricacies of Fitts' Law, including an attempt at a derivation of the equation from physical principals, the authors direct the reader to references [[insert citations]]. 
 
 The form of Fitts' Law we will be using is referred to as Shannon's variation as it is suggested by a direct analogy with Shannon's information theorem and is expressed as:
 
@@ -233,13 +233,39 @@ $$
 
 \section{METHODS AND ASSUMPTIONS}
 
-Before you begin to format your paper, first write and save the content as a separate text file. Keep your text and graphic files separate until after the text has been formatted and styled. Do not use hard tabs, and limit use of hard returns to only one return at the end of a paragraph. Do not add any kind of pagination anywhere in the paper. Do not number text heads-the template will do that for you.
+In this study we seek to determine if a user of a haptic device travelling between two points is influenced by the coupling of the device inertia and to quantify changes in their ability to perform the task. We assume the user seeks to travel along a straight line between the starting and end point, ultimately coming to rest in the quickest time possible. This is a discrete form of a traditional tapping test and can be modelled suitable by Fitts' law [[insert reference here]]. 
 
-Finally, complete content and organizational editing before formatting. Please take note of the following items when proofreading spelling and grammar:
+By changing the navigational task to coincide with directions of varying coupling and comparing the \textit{Index of Performance} of the user we can develop an understanding of the role of coupling on haptic performance. We aim to simulate the navigational task to theoretically predict the performance trends that may occur as well as what the largest contributing factors are to the parasitic forces experienced.   
 
-\subsection{Simulation} Define abbreviations and acronyms the first time they are used in the text, even after they have been defined in the abstract. Abbreviations such as IEEE, SI, MKS, CGS, sc, dc, and rms do not have to be defined. Do not use abbreviations in the title or heads unless they are unavoidable.
+\subsection{Simulation} 
+To simulate the navigational task, the device dynamics for a parallel five-bar mechanism were developed and represented in a Cartesian coordinate frame attached to the base of the device. The dynamic parameters were produced in accordance with the specifications of the Quansar 2DOF planar pantograph. As we are interested in gaining insight about the effects of coupling on the device performance we use the quadratic form of the kinetic energy equation at unit magnitude to express the device inertia along the principle axes with respect to the base frame. 
 
-\subsection{Experimetns}
+$$ \bm{z}^T\bm{M}\bm{z}=\bm{z}^T\bm{P}^T\bm{D}\bm{P}\bm{z}=1 $$ 
+
+The column entries of $\bm{P}$ represent the directions in the base frame along which the device inertia is decoupled. These directions are significant as an acceleration in a direction that is decoupled will not result in a parasitic force or subsequent acceleration in any orthogonal space. If there is a direction of minimum coupling, so too must there be a direction along which the coupling terms are maximum due to the invariance of the inertia dyad. These are of particular interest in determining the effects of coupling on device performance. By performing a similarity transformation on the device inertia tensor, the directions along which maximum coupling occurs can be determined. This is analogous to computing the magnitude and directions of the maximum shear stress in solid mechanics[]. 
+
+The directions and magnitude of the maximum coupling were computationally determined at each point in the device workspace. A contour map was procedurally generated with logarithms of the coupling magnitude and superimposed on a vector map of the directions of maximum coupling. This tool allowed us to select a region to simulate the navigation task as we wanted to minimize the effect that changes in the magnitude of the coupling had on path traversal. We felt this was important because operation within a region of too little coupling magnitude would have an insignificant impact on a users performance regardless of path orientation. Simultaneously, we wanted to reduce changes in coupling magnitude while navigating to better isolate path orientation as the independent variable. While this is not perfectly realizable the selected paths can be seen below. The magnitude of the coupling is on the order of $10^{-2}-10^{-4} kg$ throughout the entire region of the path selection. This allows us to select a reasonably long path for the navigation task while in a roughly representative coupling magnitude range for the workspace. Three path orientations were selected based on the directions of coupling: (i) in the direction of inertia decoupling, (ii) in a direction corresponding to a high degree of inertia coupling, and (iii) a third direction that represents an arbitrary path neither along a decoupled or max coupled direction. 
+
+
+[[Insert figure to show the streamslice plot]]
+
+Next, the device dynamics are transformed into a minimum representation as described in Section 2b. We define the \textit{operational space} as the direction along the line between the two points as this is the user's intended path of minimum length. The direction orthogonal to the \textit{operational space} is the \textit{admissible motion space}. 
+
+[[[insert drawing here to show the two spaces]]]
+
+Our primary assumption in simulation is that the user does not provide feedback to correct for deviations from the path that may result from the device dynamics. This assumption is based on the evidence that a user performing rapid navigational tasks with a low \textit{Index of Difficulty} do so ballistically (i.e without feedback control) [[insert citation]]. Thus we prescribe a constant acceleration in the \textit{operational space} but do not constrain movement in the admissible motion space.
+
+Due to the restriction that the user must come to rest at the end of their journey, the acceleration in the operational space is reversed after half the operational path length, or rather, when the projection of the simulated trajectory onto the operational space is greater than half the distance of the line between the two points. 
+
+The accelerations were determined by performing a tapping test with a untethered stylus. The average duration it took for participants to tap between $10 cm$ targets were between 0.36 and 0.44 seconds. We use this information and the path length to solve for a reasonable range for human acceleration. 
+
+We perform the simulations moving along the path for each orientation angle ($pi/2, pi/4, 0$) $rads$  while varying the operational space acceleration ($0.27, 0.25 0.23$)$\frac{m}{s^2}$ for each test. The simulations were then carried out for the reverse direction. 
+
+Finally, to examine the effects of the inertial forces resulting from acceleration opposed to those resulting from velocity, the simulations were carried out again with a constant velocity for the same duration of time (the average velocities from the original tests). 
+
+\subsection{Experiments}
+
+Human experiments were preformed to validate the simulations using the Quansar 2DOF planar pantograph. The testbed was setup using the same path lengths and orientations as those simulated. Users were asked to traverse the path as quickly and accurately as possible. They then performed the navigational tasks in the reverse direction. Small, $1 cm$, and large, $2 cm$, diameter targets were chosen in accordance with Fitts' law to provide variation in the time it took for users to complete the navigation task, thus emulating variation in acceleration.
 
 \begin{itemize}
 
