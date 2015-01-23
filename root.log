@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.12)  18 JAN 2015 18:36
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.12)  22 JAN 2015 15:02
 entering extended mode
 **root.tex
 ("C:\Users\moriarty-admin\Desktop\New folder\root.tex"
@@ -110,165 +110,134 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 )
 ** ATTENTION: Overriding command lockouts (line 9).
 ** ATTENTION: Overriding IEEE standard margins (line 12).
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
-)
-Package graphics Info: Driver file: pdftex.def on input line 91.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count91
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\times.sty"
-Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip47
-
-For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks15
-\ex@=\dimen113
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen114
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 1999/12/14 v2.01 operator names
-)
-\inf@bad=\count92
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count93
-\leftroot@=\count94
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count95
-\DOTSCASE@=\count96
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
-\big@size=\dimen115
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count97
-\c@MaxMatrixCols=\count98
-\dotsspace@=\muskip10
-\c@parentequation=\count99
-\dspbrk@lvl=\count100
-\tag@help=\toks16
-\row@=\count101
-\column@=\count102
-\maxfields@=\count103
-\andhelp@=\toks17
-\eqnshift@=\dimen116
-\alignsep@=\dimen117
-\tagshift@=\dimen118
-\tagwidth@=\dimen119
-\totwidth@=\dimen120
-\lineht@=\dimen121
-\@envbody=\toks18
-\multlinegap=\skip48
-\multlinetaggap=\skip49
-\mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
 ("C:\Users\moriarty-admin\Desktop\New folder\root.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen122
-\scratchbox=\box29
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen123
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks21
-)
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 48.
-LaTeX Font Info:    Try loading font information for U+msa on input line 48.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 48.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.69997> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.5> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 45.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 [][][]$[]$\OT1/ptm/m/n/8 Bernard D. Re-searcheris with the De-part-ment of Elec
 -tri-cal
  []
 
 
-Underfull \hbox (badness 8075) in paragraph at lines 48--48
+Underfull \hbox (badness 8075) in paragraph at lines 45--45
 \OT1/ptm/m/n/8 En-gi-neer-ing, Wright State Uni-ver-sity, Day-ton, OH 45435, US
 A
  []
 
 Missing character: There is no Ò in font ptmb7t!
 Missing character: There is no Ó in font ptmb7t!
-
-Underfull \hbox (badness 4872) in paragraph at lines 82--83
-\OT1/ptm/m/n/10 the-ory work,  \OT1/ptm/m/it/10 Math-e-mat-i-cal The-ory of Com
--mu-ni-ca-
- []
-
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 85.
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
+Missing character: There is no Ò in font ptmr7t!
+Missing character: There is no Ó in font ptmr7t!
 Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
 Missing character: There is no Ò in font ptmr7t!
@@ -314,86 +283,7 @@ Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
 Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
 Missing character: There is no Ð in font ptmr7t!
- [3]
 Missing character: There is no Ð in font ptmr7t!
 Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
@@ -448,32 +338,33 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[4] ("C:\Users\moriarty-admin\Desktop\New folder\root.aux") ) 
+[3] ("C:\Users\moriarty-admin\Desktop\New folder\root.aux")
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2587 strings out of 493921
- 35377 string characters out of 3147255
- 96089 words of memory out of 3000000
- 5877 multiletter control sequences out of 15000+200000
- 44739 words of font info for 101 fonts, out of 3000000 for 9000
+ 884 strings out of 493921
+ 14540 string characters out of 3147255
+ 70306 words of memory out of 3000000
+ 4239 multiletter control sequences out of 15000+200000
+ 39844 words of font info for 78 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,9n,26p,847b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/
-MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
-mb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on root.pdf (4 pages, 161048 bytes).
+ 26i,9n,20p,914b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on root.pdf (3 pages, 126301 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,22 +15,22 @@
 % on the last page of the document
 
 % The following packages can be found on http:\\www.ctan.org
-\usepackage{graphics} % for pdf, bitmapped graphics files
+\usepackage{graphicx} % for pdf, bitmapped graphics files
 %\usepackage{epsfig} % for postscript graphics files
 %\usepackage{mathptmx} % assumes new font selection scheme installed
 \usepackage{times} % assumes new font selection scheme installed
-\usepackage{amsmath} % assumes amsmath package installed
+\usepackage{amsmath} % assumes amsmath package installed%
 \usepackage{amssymb}  % assumes amsmath package installed
 %\usepackage[utf8]{inputenc}
 \usepackage{bm}
-
+\usepackage{epstopdf}
 
 \title{\LARGE \bf
 Effects of Device Coupling on Haptic Performance
 }
 
 
-\author{Colin Gallacher$^{1}$ and Jozsef K\"{o}vecses$^{2}$% <-this % stops a space
+\author{Colin Gallacher$^{1}$, John Willes$^{2}$, and Jozsef K\"{o}vecses$^{3}$% <-this % stops a space
 \thanks{*This work was not supported by any organization}% <-this % stops a space
 \thanks{$^{1}$Albert Author is with Faculty of Electrical Engineering, Mathematics and Computer Science,
         University of Twente, 7500 AE Enschede, The Netherlands
@@ -61,6 +61,7 @@ This electronic document is a ÒliveÓ template. The various components of your pa
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{INTRODUCTION}
 
+
 At the moment, performance evaluation of force feedback haptic devices presents a huge hurdle towards the general acceptance of haptic technologies by the public. The wide range of device mechanism and uses poses a seriously challenging task of evaluating how a device will perform.
 
  Currently we evaluate the performance of devices based on respective quantifiable performance metrics for haptic systems. These haptic systems are analysed based on the device properties in the unpowered, powered, and interactive state [[Samur12]]. Still, we lack valuable quantitiative metrics that consumers could use to evaluate the quality of a device akin to the ??? for sound systems or ??? for televisions. Progress has been made to characterize the performance of specific devices based on their ability to perform in specified tasks that are fairly universal for haptic applications based on psychophysical evaluation test-beds. These widely accepted tasks can be partitioned into navigation, manipulation, and selection tasks. 
@@ -81,21 +82,21 @@ To better familiarize the reader with the nature of the experiment, here we will
 
 Drawing from Shannon's seminal information theory work, \textit{ Mathematical Theory of Communication}[[Shannon48]], Fitts hypothesised that the time it took for a human to accomplish a task was linearly proportional to the difficulty of the task [[Fitts54]]. The relationship Fitts devised is analagous to Shannon's Theorem [[Shannon48]] and is referred to as Fitts' Law: 
 
-$$
-MT=\frac{ID}{IP} \eqno{(1)}
-$$
+\begin{equation} 
+MT=\frac{ID}{IP} 
+\end{equation}
 
 
 Where, $MT$ is the measured time, $ID$ , is termed the \textit{Index of Difficulty} and, $IP$, the {Index of Performance}. The index of difficulty is defined as,
-$$
-ID= \log_2\left(\frac{2A}{W}\right) \eqno{(2)}
-$$  
+\begin{equation}
+ID= \log_2\left(\frac{2A}{W}\right)
+\end{equation}  
 
 $ID$, is a way of non-dimensionalizing the difficulty of a movement task and corresponds to the ratio of the distance of an object, $A$, to the characteristic width of the object, $W$. Fitts required users tap a stylus between two targets of varying distance and size while measuring the time taken to perform the task. A linear regression was then performed on the data providing a line of best fit.
 
-$$
-MT=a+bID \eqno{(3)}
-$$
+\begin{equation}
+MT=a+bID
+\end{equation}
 
 
 The intercept, $a$, and slope, $b$, are empirically determined constants. The slope of this line, $b$, corresponds to the reciprocal of the \textit{Index of Performance}, $IP$, and is assumed constant for the specific tool or device the user is operating with. The use of the $\log_2$ in $(2)$ allows for the ratio of distance to object width (corresponding to the associated difficulty of a task) to be expressed in units of $bits$. Rearranging equation $(1)$ to solve for $IP$ we see the \textit{Index of Performance}, $IP$, can be expressed in units of $\left[\frac{bits}{sec}\right]$. 
@@ -106,7 +107,9 @@ The Fitts' Law model of human response time as a function of task difficulty in 
 
 The form of Fitts' Law we will be using is referred to as Shannon's variation as it is suggested by a direct analogy with Shannon's information theorem and is expressed as:
 
-$$ MT= a+b\log_2\left(\frac{A+W_e}{W_e}\right) \eqno{(4)} $$
+\begin{equation} 
+MT= a+b\log_2\left(\frac{A+W_e}{W_e}\right) 
+\end{equation}
 
 Where, $W_e$, is defined as the \textit{Effective Target Width} [[Welford68]]. 
 
@@ -118,16 +121,16 @@ In order to gain insight into the role parasitic forces may have on a haptic use
 
 The variational form of the system dynamics is expressed with the scalar equation: 
 
-$$
+\begin{equation}
 \delta \hat{\bm{q}_a}^T \left( \bm{M}\dot{\bm{q}_a}+\bm{c}-\tau\right)=0
-$$
+\end{equation}
 
 Here the inertia tensor, $\bm{M}$, centrifugal and Coriolis forces, $\bm{c}$, and the generalized torques, $\tau$, are represented in the joint space. The vector form of the joint space dynamics is: 
-$$
+\begin{equation}
 \bm{M}\dot{\bm{q_a}}+\bm{c}=\tau
-$$
+\end{equation}
 
-The joint space velocities are mapped to the \textit{operational} and \textit{admissible-motion} spaces via the transformation, $$\dot{\bm{u}}=\bm{R}\bm{q}_a $$ where $
+The joint space velocities are mapped to the \textit{operational} and \textit{admissible-motion} spaces via the transformation, \begin{equation}\dot{\bm{u}}=\bm{R}\bm{q}_a \end{equation} where $
 \bm{\dot{u}}= \begin{bmatrix}
 \bm{\dot{u}}_{op} 
 \bm{\dot{u}}_{adm} \\
@@ -138,71 +141,71 @@ $ and $
 \bm{B} \\
 \end{bmatrix}
 $. $\bm{J}$ is the \textit{Jacobian} mapping the joint variables to the operational space coordinates. The operation space coordinates are associated with a space of constrained motion for the device end-effector. We impose that $\bm{R}$ must be invertible through the selection of the matrix $\bm{B}$ which maps the joint velocities to the admissible-motion space. This allows us to express the joint velocities as: 
-$$
+\begin{equation}
 \bm{q}_a = \bm{R}^{-1} \dot{\bm{u}}
-$$
+\end{equation}
 The variations can then be expressed as: 
-$$
+\begin{equation}
 \delta \bm{q}_a = \delta \bm{u}^T \bm{R}^{-T}
-$$
+\end{equation}
 
 The substitution of the above equation into [[insert number equation]] allows us to write the variational form of the system dynamics in terms of the operational and admissible-motion spaces. 
 
-$$
+\begin{equation}
 \delta \bm{u}^T \bm{R}^{-T} (\bm{M}\dot{\bm{q}}_a + \bm{c} - \bm{\tau})=0
-$$
+\end{equation}
 
 The vector form of the operational and admissible-motion space dynamics is then written as: 
 
-$$
+\begin{equation}
 \bm{R}^{-T}\bm{M}\dot{\bm{q}}_a + \bm{R}^{-T}\bm{c} = \bm{R}^{-T}\bm{\tau}
-$$
+\end{equation}
 
 Differentiation of equation [[insert equation number]] leads to the acceleration level relationship: 
 
-$$
+\begin{equation}
 \dot{\bm{q}}_a = \bm{R}^{-1} \ddot{\bm{u}} + \dot{\bm{R}^{-1}} \dot{\bm{u}}
-$$
+\end{equation}
 
 Substitution of the above equation into equation [[insert equation number]] leads to the device dynamics represented in the operational and admissible-motion space with the kinematic parametrizations also represented in the operations/admissible-motion space realization. 
 
-$$
+\begin{equation}
 \bm{R}^{-T}\bm{M}\left(\bm{R}^{-1} \ddot{\bm{u}} + \dot{\bm{R}^{-1}} \dot{\bm{u}}\right) + \bm{R}^{-T}\bm{c} = \bm{R}^{-T}\bm{\tau}
-$$
+\end{equation}
 
 Expanding the above equation permits the device dynamics to be expressed as: 
 
-$$
+\begin{equation}
 \bm{R}^{-T}\bm{M}\bm{R}^{-1} \ddot{\bm{u}}+\bm{R}^{-T}\bm{M}\dot{\bm{R}^{-1}} \dot{\bm{u}}+\bm{R}^{-T}\bm{c} = \bm{R}^{-T}\bm{\tau}
-$$
+\end{equation}
 
 Grouping the acceleration and velocity terms together we arrive at the equation:
 
-$$
+\begin{equation}
 \bm{R}^{-T}\bm{M}\bm{R}^{-1} \ddot{\bm{u}}+\bm{R}^{-T}\bm{\bar{c}} = \bm{R}^{-T}\bm{\tau}
-$$
+\end{equation}
 
 The first term corresponds the the inertial forces felt in the operational and admissible motion spaces as a result of the device acceleration.
 
-$$
+\begin{equation}
 \bm{f}_{1}=\bm{R}^{-T}\bm{M}\bm{R}^{-1}\ddot{\bm{u}}
-$$
+\end{equation}
 
  The second term corresponds to the inertial forces associated with the device velocities often called the centrifugal and Coriolis forces. 
  
-  $$
+  \begin{equation}
 \bm{f}_{2}=\bm{R}^{-T}\bm{\bar{c}}
-$$
+\end{equation}
 
  The term on the right hand side of equation [[insert equation number]] corresponds to the applied forces at the haptic end-effector with respect to the operational and admissible-motion spaces. 
 
 If we define $\bm{W}=\bm{R}^{-T}\bm{M}\bm{R}^{-1}$, $\bm{z}= \bm{R}^{-T}\bm{\bar{c}}$, and $\bm{s}= \bm{R}^{-T}\bm{\tau}$ we can rewrite the dynamic equations as: 
 
-$$ \bm{W}\ddot{\bm{u}}+\bm{z}=\bm{s} $$
+\begin{equation} \bm{W}\ddot{\bm{u}}+\bm{z}=\bm{s} \end{equation}
 
 This can be represented in block matrix form as: 
 
-$$ \begin{bmatrix}
+\begin{equation} \begin{bmatrix}
 \bm{W}_{op} & \bm{W}_{oa} \\ 
 \bm{W}_{ao} & \bm{W}_a \\ 
 \end{bmatrix} 
@@ -219,17 +222,17 @@ $$ \begin{bmatrix}
 \bm{s}_{op} \\
 \bm{s}_{a} \\
 \end{bmatrix}
-$$
+\end{equation}
 
 Finally, the force that we feel in the admissible-motion space is the parasitic force that a user trying to navigate strictly in the operational space would feel for a haptic device. The dynamic equation associated with the parasitic forces is then written as:
 
-$$ 
+\begin{equation} 
 \bm{W}_{ao}\ddot{\bm{u}}_{op}+\bm{W}_{a}\ddot{\bm{u}}_{a}+\bm{z}_a=\bm{s}_a
-$$
+\end{equation}
 
-$$
+\begin{equation}
 \ddot{\bm{u}}_{a}=W_{a}^{-1}\left(\bm{s}_a-\bm{z}_a-{W}_{ao}\ddot{\bm{u}}_{op}\right)
-$$
+\end{equation}
 
 \section{METHODS AND ASSUMPTIONS}
 
@@ -238,20 +241,83 @@ In this study we seek to determine if a user of a haptic device travelling betwe
 By changing the navigational task to coincide with directions of varying coupling and comparing the \textit{Index of Performance} of the user we can develop an understanding of the role of coupling on haptic performance. We aim to simulate the navigational task to theoretically predict the performance trends that may occur as well as what the largest contributing factors are to the parasitic forces experienced.   
 
 \subsection{Simulation} 
+
+
+ \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{5bar}
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+   
 To simulate the navigational task, the device dynamics for a parallel five-bar mechanism were developed and represented in a Cartesian coordinate frame attached to the base of the device. The dynamic parameters were produced in accordance with the specifications of the Quansar 2DOF planar pantograph. As we are interested in gaining insight about the effects of coupling on the device performance we use the quadratic form of the kinetic energy equation at unit magnitude to express the device inertia along the principle axes with respect to the base frame. 
 
-$$ \bm{z}^T\bm{M}\bm{z}=\bm{z}^T\bm{P}^T\bm{D}\bm{P}\bm{z}=1 $$ 
+\begin{equation} \bm{z}^T\bm{M}\bm{z}=\bm{z}^T\bm{P}^T\bm{D}\bm{P}\bm{z}=1 \end{equation} 
 
-The column entries of $\bm{P}$ represent the directions in the base frame along which the device inertia is decoupled. These directions are significant as an acceleration in a direction that is decoupled will not result in a parasitic force or subsequent acceleration in any orthogonal space. If there is a direction of minimum coupling, so too must there be a direction along which the coupling terms are maximum due to the invariance of the inertia dyad. These are of particular interest in determining the effects of coupling on device performance. By performing a similarity transformation on the device inertia tensor, the directions along which maximum coupling occurs can be determined. This is analogous to computing the magnitude and directions of the maximum shear stress in solid mechanics[]. 
+The column entries of $\bm{P}$ represent the directions in the base frame along which the device inertia is decoupled. These directions are significant as an acceleration in a direction that is decoupled will not result in a parasitic force or subsequent acceleration in any orthogonal space. If there is a direction of minimum coupling, so too must there be a direction along which the coupling terms are maximum due to the invariance of the inertia dyad. These are of particular interest in determining the effects of coupling on device performance.
 
-The directions and magnitude of the maximum coupling were computationally determined at each point in the device workspace. A contour map was procedurally generated with logarithms of the coupling magnitude and superimposed on a vector map of the directions of maximum coupling. This tool allowed us to select a region to simulate the navigation task as we wanted to minimize the effect that changes in the magnitude of the coupling had on path traversal. We felt this was important because operation within a region of too little coupling magnitude would have an insignificant impact on a users performance regardless of path orientation. Simultaneously, we wanted to reduce changes in coupling magnitude while navigating to better isolate path orientation as the independent variable. While this is not perfectly realizable the selected paths can be seen below. The magnitude of the coupling is on the order of $10^{-2}-10^{-4} kg$ throughout the entire region of the path selection. This allows us to select a reasonably long path for the navigation task while in a roughly representative coupling magnitude range for the workspace. Three path orientations were selected based on the directions of coupling: (i) in the direction of inertia decoupling, (ii) in a direction corresponding to a high degree of inertia coupling, and (iii) a third direction that represents an arbitrary path neither along a decoupled or max coupled direction. 
+ \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{Decoupled.eps}
+    
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
 
+By performing a similarity transformation on the device inertia tensor, the directions along which maximum coupling occurs can be determined. This is analogous to computing the magnitude and directions of the maximum shear stress in solid mechanics[]. 
 
-[[Insert figure to show the streamslice plot]]
+ \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{MaxCouplingDirections.eps}
+    
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+
+The directions and magnitude of the maximum coupling were computationally determined at each point in the device workspace. A contour map was procedurally generated with logarithms of the coupling magnitude and superimposed on a vector map of the directions of maximum coupling. This tool allowed us to select a region to simulate the navigation task as we wanted to minimize the effect that changes in the magnitude of the coupling had on path traversal. We felt this was important because operation within a region of too little coupling magnitude would have an insignificant impact on a users performance regardless of path orientation. Simultaneously, we wanted to reduce changes in coupling magnitude while navigating to better isolate path orientation as the independent variable. While this is not perfectly realizable the selected paths can be seen below. The magnitude of the coupling is on the order of $10^{-2}$-$10^{-4}$ $kgs$ throughout the entire region of the path selection. This allows us to select a reasonably long path for the navigation task while in a roughly representative coupling magnitude range for the workspace. Three path orientations were selected based on the directions of coupling: (i) in the direction of inertia decoupling, (ii) in a direction corresponding to a high degree of inertia coupling, and (iii) a third direction that represents an arbitrary path neither along a decoupled or max coupled direction. 
+
+ \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{ColormapStreamlineLogarithmGrey.eps}
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+
 
 Next, the device dynamics are transformed into a minimum representation as described in Section 2b. We define the \textit{operational space} as the direction along the line between the two points as this is the user's intended path of minimum length. The direction orthogonal to the \textit{operational space} is the \textit{admissible motion space}. 
 
-[[[insert drawing here to show the two spaces]]]
+ \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{operational_admissible.eps}
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+
 
 Our primary assumption in simulation is that the user does not provide feedback to correct for deviations from the path that may result from the device dynamics. This assumption is based on the evidence that a user performing rapid navigational tasks with a low \textit{Index of Difficulty} do so ballistically (i.e without feedback control) [[insert citation]]. Thus we prescribe a constant acceleration in the \textit{operational space} but do not constrain movement in the admissible motion space.
 
@@ -259,7 +325,7 @@ Due to the restriction that the user must come to rest at the end of their journ
 
 The accelerations were determined by performing a tapping test with a untethered stylus. The average duration it took for participants to tap between $10 cm$ targets were between 0.36 and 0.44 seconds. We use this information and the path length to solve for a reasonable range for human acceleration. 
 
-We perform the simulations moving along the path for each orientation angle ($pi/2, pi/4, 0$) $rads$  while varying the operational space acceleration ($0.27, 0.25 0.23$)$\frac{m}{s^2}$ for each test. The simulations were then carried out for the reverse direction. 
+We perform the simulations moving along the path for each orientation angle, ($\frac{pi}{2}, \frac{pi}{4}, 0$) $rads$,  while varying the operational space accelerations, ($0.27 , 0.25, 0.23$)$\frac{m}{s^2}$,  for each test. The simulations were then carried out for the reverse direction. 
 
 Finally, to examine the effects of the inertial forces resulting from acceleration opposed to those resulting from velocity, the simulations were carried out again with a constant velocity for the same duration of time (the average velocities from the original tests). 
 
@@ -267,46 +333,50 @@ Finally, to examine the effects of the inertial forces resulting from accelerati
 
 Human experiments were preformed to validate the simulations using the Quansar 2DOF planar pantograph. The testbed was setup using the same path lengths and orientations as those simulated. Users were asked to traverse the path as quickly and accurately as possible. They then performed the navigational tasks in the reverse direction. Small, $1 cm$, and large, $2 cm$, diameter targets were chosen in accordance with Fitts' law to provide variation in the time it took for users to complete the navigation task, thus emulating variation in acceleration.
 
-\begin{itemize}
+ \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{Device1.jpg}
+       \includegraphics[scale=1.0]{Device2.jpg}
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
 
-\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as Ò3.5-inch disk driveÓ.
-\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
-\item Do not mix complete spellings and abbreviations of units: ÒWb/m2Ó or Òwebers per square meterÓ, not Òwebers/m2Ó.  Spell out units when they appear in text: Ò. . . a few henriesÓ, not Ò. . . a few HÓ.
-\item Use a zero before decimal points: Ò0.25Ó, not Ò.25Ó. Use Òcm3Ó, not ÒccÓ. (bullet list)
-
-\end{itemize}
-
-
-\subsection{Equations}
-
-The equations are an exception to the prescribed specifications of this template. You will need to determine whether or not your equation should be typed using either the Times New Roman or the Symbol font (please no other font). To create multileveled equations, it may be necessary to treat the equation as a graphic and insert it into the text after your paper is styled. Number equations consecutively. Equation numbers, within parentheses, are to position flush right, as in (1), using a right tab stop. To make your equations more compact, you may use the solidus ( / ), the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols. Use a long dash rather than a hyphen for a minus sign. Punctuate equations with commas or periods when they are part of a sentence, as in
-
-$$
-\alpha + \beta = \chi \eqno{(1)}
-$$
-
-Note that the equation is centered using a center tab stop. Be sure that the symbols in your equation have been defined before or immediately following the equation. Use Ò(1)Ó, not ÒEq. (1)Ó or Òequation (1)Ó, except at the beginning of a sentence: ÒEquation (1) is . . .Ó
-
-\subsection{Some Common Mistakes}
-\begin{itemize}
-
-
-\item The word ÒdataÓ is plural, not singular.
-\item The subscript for the permeability of vacuum ?0, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ÒoÓ.
-\item In American English, commas, semi-/colons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
-\item A graph within a graph is an ÒinsetÓ, not an ÒinsertÓ. The word alternatively is preferred to the word ÒalternatelyÓ (unless you really mean something that alternates).
-\item Do not use the word ÒessentiallyÓ to mean ÒapproximatelyÓ or ÒeffectivelyÓ.
-\item In your paper title, if the words Òthat usesÓ can accurately replace the word ÒusingÓ, capitalize the ÒuÓ; if not, keep using lower-cased.
-\item Be aware of the different meanings of the homophones ÒaffectÓ and ÒeffectÓ, ÒcomplementÓ and ÒcomplimentÓ, ÒdiscreetÓ and ÒdiscreteÓ, ÒprincipalÓ and ÒprincipleÓ.
-\item Do not confuse ÒimplyÓ and ÒinferÓ.
-\item The prefix ÒnonÓ is not a word; it should be joined to the word it modifies, usually without a hyphen.
-\item There is no period after the ÒetÓ in the Latin abbreviation Òet al.Ó.
-\item The abbreviation Òi.e.Ó means Òthat isÓ, and the abbreviation Òe.g.Ó means Òfor exampleÓ.
-
-\end{itemize}
+%
 
 
 \section{RESULTS}
+
+ \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{IPvPhi_forwardReversed.eps}
+      \includegraphics[scale=1.0]{legend.eps}
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+
+
+ \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{IPvPhi_AccVel.eps}
+      \includegraphics[scale=1.0]{legend1.eps}
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
 
 Use this sample document as your LaTeX source file to create your document. Save this file as {\bf root.tex}. You have to make sure to use the cls file that came with this distribution. If you use a different style file, you cannot expect to get required margins. Note also that when you are creating your out PDF file, the source file is only part of the equation. {\it Your \TeX\ $\rightarrow$ PDF filter determines the output file size. Even if you make all the specifications to output a letter file in the source - if your filter is set to produce A4, you will only get A4 output. }
 

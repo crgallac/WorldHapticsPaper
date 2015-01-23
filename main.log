@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.12)  22 JAN 2015 02:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.12)  22 JAN 2015 20:25
 entering extended mode
 **main.tex
 ("C:\Users\moriarty-admin\Desktop\New folder\main.tex"
@@ -110,6 +110,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 )
 ** ATTENTION: Overriding command lockouts (line 9).
 ** ATTENTION: Overriding IEEE standard margins (line 12).
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
@@ -132,6 +139,9 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count91
 ))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
@@ -145,12 +155,12 @@ Package: amstext 2000/06/29 v2.01
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks15
-\ex@=\dimen113
+\@emptytoks=\toks16
+\ex@=\dimen115
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen114
+\pmbraise@=\dimen116
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -167,7 +177,7 @@ LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
-\big@size=\dimen115
+\big@size=\dimen117
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count97
@@ -175,21 +185,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \dotsspace@=\muskip10
 \c@parentequation=\count99
 \dspbrk@lvl=\count100
-\tag@help=\toks16
+\tag@help=\toks17
 \row@=\count101
 \column@=\count102
 \maxfields@=\count103
-\andhelp@=\toks17
-\eqnshift@=\dimen116
-\alignsep@=\dimen117
-\tagshift@=\dimen118
-\tagwidth@=\dimen119
-\totwidth@=\dimen120
-\lineht@=\dimen121
-\@envbody=\toks18
+\andhelp@=\toks18
+\eqnshift@=\dimen118
+\alignsep@=\dimen119
+\tagshift@=\dimen120
+\tagwidth@=\dimen121
+\totwidth@=\dimen122
+\lineht@=\dimen123
+\@envbody=\toks19
 \multlinegap=\skip48
 \multlinetaggap=\skip49
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -211,7 +221,80 @@ Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
 )
-("C:\Users\moriarty-admin\Desktop\New folder\main.aux")
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+("C:\Users\moriarty-admin\Desktop\New folder\main.aux"
+
+LaTeX Warning: Label `figurelabel' multiply defined.
+
+
+LaTeX Warning: Label `figurelabel' multiply defined.
+
+
+LaTeX Warning: Label `figurelabel' multiply defined.
+
+
+LaTeX Warning: Label `figurelabel' multiply defined.
+
+
+LaTeX Warning: Label `figurelabel' multiply defined.
+
+
+LaTeX Warning: Label `figurelabel' multiply defined.
+
+
+LaTeX Warning: Label `figurelabel' multiply defined.
+
+
+LaTeX Warning: Label `figurelabel' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
@@ -224,20 +307,19 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
-\scratchdimen=\dimen122
+\scratchdimen=\dimen124
 \scratchbox=\box29
 \nofMPsegments=\count105
 \nofMParguments=\count106
-\everyMPshowfont=\toks20
+\everyMPshowfont=\toks21
 \MPscratchCnt=\count107
-\MPscratchDim=\dimen123
+\MPscratchDim=\dimen125
 \MPnumerator=\count108
 \makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks21
+\everyMPtoPDFconversion=\toks22
 )
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 48.
 LaTeX Font Info:    Try loading font information for U+msa on input line 48.
@@ -268,12 +350,12 @@ A
 Missing character: There is no Ò in font ptmb7t!
 Missing character: There is no Ó in font ptmb7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 []\OT1/ptm/m/n/10 Drawing from Shan-non's sem-i-nal in-for-ma-tion
  []
 
 
-Underfull \hbox (badness 4872) in paragraph at lines 82--83
+Underfull \hbox (badness 4872) in paragraph at lines 83--84
 \OT1/ptm/m/n/10 the-ory work,  \OT1/ptm/m/it/10 Math-e-mat-i-cal The-ory of Com
 -mu-ni-ca-
  []
@@ -281,7 +363,224 @@ Underfull \hbox (badness 4872) in paragraph at lines 82--83
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-] [2] [3]
+] [2]
+Package epstopdf Info: Source file: <5bar.eps>
+(epstopdf)                    date: 2015-01-22 14:59:24
+(epstopdf)                    size: 34670 bytes
+(epstopdf)             Output file: <5bar-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-22 14:59:31
+(epstopdf)                    size: 16531 bytes
+(epstopdf)             Command: <epstopdf --outfile=5bar-eps-converted-to.pdf 5
+bar.eps>
+(epstopdf)             \includegraphics on input line 251.
+Package epstopdf Info: Output file is already uptodate.
+
+<5bar-eps-converted-to.pdf, id=25, 217.81375pt x 142.5325pt>
+File: 5bar-eps-converted-to.pdf Graphic file (type pdf)
+
+<use 5bar-eps-converted-to.pdf>
+Package pdftex.def Info: 5bar-eps-converted-to.pdf used on input line 251.
+(pdftex.def)             Requested size: 217.8132pt x 142.53214pt.
+
+Overfull \hbox (1.0032pt too wide) in paragraph at lines 251--251
+[][] 
+ []
+
+Package epstopdf Info: Source file: <Decoupled.eps>
+(epstopdf)                    date: 2015-01-22 15:23:03
+(epstopdf)                    size: 16620 bytes
+(epstopdf)             Output file: <Decoupled-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-22 15:28:34
+(epstopdf)                    size: 8035 bytes
+(epstopdf)             Command: <epstopdf --outfile=Decoupled-eps-converted-to.
+pdf Decoupled.eps>
+(epstopdf)             \includegraphics on input line 270.
+Package epstopdf Info: Output file is already uptodate.
+<Decoupled-eps-converted-to.pdf, id=26, 216.81pt x 162.6075pt>
+File: Decoupled-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Decoupled-eps-converted-to.pdf>
+Package pdftex.def Info: Decoupled-eps-converted-to.pdf used on input line 270.
+
+(pdftex.def)             Requested size: 216.80946pt x 162.6071pt.
+Package epstopdf Info: Source file: <MaxCouplingDirections.eps>
+(epstopdf)                    date: 2015-01-22 15:24:03
+(epstopdf)                    size: 16578 bytes
+(epstopdf)             Output file: <MaxCouplingDirections-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2015-01-22 15:33:49
+(epstopdf)                    size: 8103 bytes
+(epstopdf)             Command: <epstopdf --outfile=MaxCouplingDirections-eps-c
+onverted-to.pdf MaxCouplingDirections.eps>
+(epstopdf)             \includegraphics on input line 285.
+Package epstopdf Info: Output file is already uptodate.
+
+<MaxCouplingDirections-eps-converted-to.pdf, id=27, 216.81pt x 162.6075pt>
+File: MaxCouplingDirections-eps-converted-to.pdf Graphic file (type pdf)
+
+<use MaxCouplingDirections-eps-converted-to.pdf>
+Package pdftex.def Info: MaxCouplingDirections-eps-converted-to.pdf used on inp
+ut line 285.
+(pdftex.def)             Requested size: 216.80946pt x 162.6071pt.
+ [3 <C:/Users/moriarty-admin/Desktop/New folder/5bar-eps-converted-to.pdf> <C:/
+Users/moriarty-admin/Desktop/New folder/Decoupled-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <ColormapStreamlineLogarithmGrey.eps>
+(epstopdf)                    date: 2015-01-22 15:00:28
+(epstopdf)                    size: 106769 bytes
+(epstopdf)             Output file: <ColormapStreamlineLogarithmGrey-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2015-01-22 15:01:28
+(epstopdf)                    size: 25230 bytes
+(epstopdf)             Command: <epstopdf --outfile=ColormapStreamlineLogarithm
+Grey-eps-converted-to.pdf ColormapStreamlineLogarithmGrey.eps>
+(epstopdf)             \includegraphics on input line 299.
+Package epstopdf Info: Output file is already uptodate.
+
+<ColormapStreamlineLogarithmGrey-eps-converted-to.pdf, id=38, 217.81375pt x 163
+.61125pt>
+File: ColormapStreamlineLogarithmGrey-eps-converted-to.pdf Graphic file (type p
+df)
+ <use ColormapStreamlineLogarithmGrey-eps-converted-to.pdf>
+Package pdftex.def Info: ColormapStreamlineLogarithmGrey-eps-converted-to.pdf u
+sed on input line 299.
+(pdftex.def)             Requested size: 217.8132pt x 163.61084pt.
+
+Overfull \hbox (1.0032pt too wide) in paragraph at lines 299--299
+[][] 
+ []
+
+Package epstopdf Info: Source file: <operational_admissible.eps>
+(epstopdf)                    date: 2015-01-22 16:30:20
+(epstopdf)                    size: 40655 bytes
+(epstopdf)             Output file: <operational_admissible-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2015-01-22 16:32:24
+(epstopdf)                    size: 11407 bytes
+(epstopdf)             Command: <epstopdf --outfile=operational_admissible-eps-
+converted-to.pdf operational_admissible.eps>
+(epstopdf)             \includegraphics on input line 314.
+Package epstopdf Info: Output file is already uptodate.
+<operational_admissible-eps-converted-to.pdf, id=39, 217.81375pt x 124.465pt>
+File: operational_admissible-eps-converted-to.pdf Graphic file (type pdf)
+
+<use operational_admissible-eps-converted-to.pdf>
+Package pdftex.def Info: operational_admissible-eps-converted-to.pdf used on in
+put line 314.
+(pdftex.def)             Requested size: 217.8132pt x 124.46469pt.
+
+Overfull \hbox (1.0032pt too wide) in paragraph at lines 314--314
+[][] 
+ []
+
+[4 <C:/Users/moriarty-admin/Desktop/New folder/MaxCouplingDirections-eps-conver
+ted-to.pdf> <C:/Users/moriarty-admin/Desktop/New folder/ColormapStreamlineLogar
+ithmGrey-eps-converted-to.pdf> <C:/Users/moriarty-admin/Desktop/New folder/oper
+ational_admissible-eps-converted-to.pdf>]
+<Device1.jpg, id=54, 216.81pt x 162.6075pt>
+File: Device1.jpg Graphic file (type jpg)
+ <use Device1.jpg>
+Package pdftex.def Info: Device1.jpg used on input line 342.
+(pdftex.def)             Requested size: 216.80946pt x 162.6071pt.
+
+<Device2.jpg, id=55, 216.87642pt x 162.67392pt>
+File: Device2.jpg Graphic file (type jpg)
+ <use Device2.jpg>
+Package pdftex.def Info: Device2.jpg used on input line 342.
+(pdftex.def)             Requested size: 216.87589pt x 162.67351pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+[][]
+ []
+
+Package epstopdf Info: Source file: <IPvPhi_forwardReversed.eps>
+(epstopdf)                    date: 2015-01-22 19:15:17
+(epstopdf)                    size: 9301 bytes
+(epstopdf)             Output file: <IPvPhi_forwardReversed-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2015-01-22 19:15:22
+(epstopdf)                    size: 3521 bytes
+(epstopdf)             Command: <epstopdf --outfile=IPvPhi_forwardReversed-eps-
+converted-to.pdf IPvPhi_forwardReversed.eps>
+(epstopdf)             \includegraphics on input line 360.
+Package epstopdf Info: Output file is already uptodate.
+<IPvPhi_forwardReversed-eps-converted-to.pdf, id=56, 216.81pt x 162.6075pt>
+File: IPvPhi_forwardReversed-eps-converted-to.pdf Graphic file (type pdf)
+
+<use IPvPhi_forwardReversed-eps-converted-to.pdf>
+Package pdftex.def Info: IPvPhi_forwardReversed-eps-converted-to.pdf used on in
+put line 360.
+(pdftex.def)             Requested size: 216.80946pt x 162.6071pt.
+Package epstopdf Info: Source file: <legend.eps>
+(epstopdf)                    date: 2015-01-22 19:28:10
+(epstopdf)                    size: 21235 bytes
+(epstopdf)             Output file: <legend-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-22 19:28:17
+(epstopdf)                    size: 4666 bytes
+(epstopdf)             Command: <epstopdf --outfile=legend-eps-converted-to.pdf
+ legend.eps>
+(epstopdf)             \includegraphics on input line 360.
+Package epstopdf Info: Output file is already uptodate.
+
+<legend-eps-converted-to.pdf, id=57, 217.81375pt x 50.1875pt>
+File: legend-eps-converted-to.pdf Graphic file (type pdf)
+
+<use legend-eps-converted-to.pdf>
+Package pdftex.def Info: legend-eps-converted-to.pdf used on input line 360.
+(pdftex.def)             Requested size: 217.8132pt x 50.18736pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
+[][]
+ []
+
+
+Overfull \hbox (1.0032pt too wide) in paragraph at lines 360--360
+[] 
+ []
+
+Package epstopdf Info: Source file: <IPvPhi_AccVel.eps>
+(epstopdf)                    date: 2015-01-22 19:39:16
+(epstopdf)                    size: 9084 bytes
+(epstopdf)             Output file: <IPvPhi_AccVel-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-22 19:39:21
+(epstopdf)                    size: 3835 bytes
+(epstopdf)             Command: <epstopdf --outfile=IPvPhi_AccVel-eps-converted
+-to.pdf IPvPhi_AccVel.eps>
+(epstopdf)             \includegraphics on input line 374.
+Package epstopdf Info: Output file is already uptodate.
+<IPvPhi_AccVel-eps-converted-to.pdf, id=58, 216.81pt x 162.6075pt>
+File: IPvPhi_AccVel-eps-converted-to.pdf Graphic file (type pdf)
+
+<use IPvPhi_AccVel-eps-converted-to.pdf>
+Package pdftex.def Info: IPvPhi_AccVel-eps-converted-to.pdf used on input line 
+374.
+(pdftex.def)             Requested size: 216.80946pt x 162.6071pt.
+Package epstopdf Info: Source file: <legend1.eps>
+(epstopdf)                    date: 2015-01-22 19:42:19
+(epstopdf)                    size: 13567 bytes
+(epstopdf)             Output file: <legend1-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-22 19:42:37
+(epstopdf)                    size: 4329 bytes
+(epstopdf)             Command: <epstopdf --outfile=legend1-eps-converted-to.pd
+f legend1.eps>
+(epstopdf)             \includegraphics on input line 374.
+Package epstopdf Info: Output file is already uptodate.
+
+<legend1-eps-converted-to.pdf, id=59, 217.81375pt x 50.1875pt>
+File: legend1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use legend1-eps-converted-to.pdf>
+Package pdftex.def Info: legend1-eps-converted-to.pdf used on input line 374.
+(pdftex.def)             Requested size: 217.8132pt x 50.18736pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--374
+[][]
+ []
+
+
+Overfull \hbox (1.0032pt too wide) in paragraph at lines 374--374
+[] 
+ []
+
 Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
 Missing character: There is no Ò in font ptmr7t!
@@ -292,91 +591,12 @@ Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
 Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
- [4]
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
-Missing character: There is no Ò in font ptmr7t!
-Missing character: There is no Ó in font ptmr7t!
+[5 <C:/Users/moriarty-admin/Desktop/New folder/Device1.jpg> <C:/Users/moriarty-
+admin/Desktop/New folder/Device2.jpg> <C:/Users/moriarty-admin/Desktop/New fold
+er/IPvPhi_forwardReversed-eps-converted-to.pdf> <C:/Users/moriarty-admin/Deskto
+p/New folder/legend-eps-converted-to.pdf> <C:/Users/moriarty-admin/Desktop/New 
+folder/IPvPhi_AccVel-eps-converted-to.pdf> <C:/Users/moriarty-admin/Desktop/New
+ folder/legend1-eps-converted-to.pdf>]
 Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
 Missing character: There is no Ò in font ptmr7t!
@@ -444,7 +664,6 @@ Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
 Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
- [5]
 Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
 Missing character: There is no Ò in font ptmr7t!
@@ -461,38 +680,39 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[6
+[6] ("C:\Users\moriarty-admin\Desktop\New folder\main.aux")
 
-] ("C:\Users\moriarty-admin\Desktop\New folder\main.aux") ) 
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2694 strings out of 493921
- 36606 string characters out of 3147255
- 98221 words of memory out of 3000000
- 5964 multiletter control sequences out of 15000+200000
+ 3218 strings out of 493921
+ 46347 string characters out of 3147255
+ 107865 words of memory out of 3000000
+ 6426 multiletter control sequences out of 15000+200000
  50266 words of font info for 119 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,9n,26p,1453b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/Mi
-KTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on main.pdf (6 pages, 213771 bytes).
+ 42i,9n,29p,1458b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cmextra/cmmib7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/c
+ourier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (6 pages, 4282693 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 134 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
