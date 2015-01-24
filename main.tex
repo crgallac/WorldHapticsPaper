@@ -378,6 +378,46 @@ Human experiments were preformed to validate the simulations using the Quansar 2
       \label{figurelabel}
    \end{figure}
 
+ \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{ExpIPvPhiFwd.eps}
+      \includegraphics[scale=1.0]{legend1.eps}
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+
+ \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{ExpIPvPhiRev.eps}
+      \includegraphics[scale=1.0]{legend1.eps}
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+   
+    \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{
+      
+      \includegraphics[scale=1.0]{ReSimulated5Bar_RevOnly.eps}
+      \includegraphics[scale=1.0]{legend1.eps}
+}}
+   %   \includegraphics[scale=1.0]{5bar.eps}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+   
+   
 Use this sample document as your LaTeX source file to create your document. Save this file as {\bf root.tex}. You have to make sure to use the cls file that came with this distribution. If you use a different style file, you cannot expect to get required margins. Note also that when you are creating your out PDF file, the source file is only part of the equation. {\it Your \TeX\ $\rightarrow$ PDF filter determines the output file size. Even if you make all the specifications to output a letter file in the source - if your filter is set to produce A4, you will only get A4 output. }
 
 It is impossible to account for all possible situation, one would encounter using \TeX. If you are using multiple \TeX\ files you must make sure that the ``MAIN`` source file is called root.tex - this is particularly important if your conference is using PaperPlaza's built in \TeX\ to PDF conversion tool.
@@ -391,17 +431,20 @@ Text heads organize the topics on a relational, hierarchical basis. For example,
 Positioning Figures and Tables: Place figures and tables at the top and bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use the abbreviation ÒFig. 1Ó, even at the beginning of a sentence.
 
 \begin{table}[h]
-\caption{An Example of a Table}
 \label{table_example}
+\caption{$W_{e}$}
 \begin{center}
-\begin{tabular}{|c||c|}
+\begin{tabular}{|c|c|c|c|}
 \hline
-One & Two\\
+\textbf{Direction}        & Path 1  & Path 2  & Path 3 \\ 
 \hline
-Three & Four\\
+Forward & 0.023         & 0.022         & 0.026      \\
+\hline
+Reverse & 0.012         & 0.030         & 0.017     \\
 \hline
 \end{tabular}
 \end{center}
+
 \end{table}
 
 
